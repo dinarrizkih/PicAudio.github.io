@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Compression</title>
+    <link rel="stylesheet" href="/style/image.css">
+    <script>
+        // Set file input value to null when the page is reloaded
+        window.onload = function() {
+            document.getElementById("imageFile").value = null;
+        };
+
+        function previewImage(event) {
+            var preview = document.getElementById('imagePreview');
+            preview.src = URL.createObjectURL(event.target.files[0]);
+            preview.style.display = 'block';
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Image Compression</h1>
+    <input type="file" accept="image/*" id="imageFile" onchange="previewImage(event)">
+    <center>
+        <img id="imagePreview" style="display: none;">
+        <button onclick="compressImage()">Compress Image</button>
+        <p id="originalImageSize" style="display: none;"></p>
+        <p id="status"></p>
+        <img src="" alt="Compressed Image" id="compressedImage">
+        <a href="" download="compressed_+ imageFile.name" id="downloadLink" style="display: none;">Download Image</a>
+        <p id="compressedImageSize" style="display: none;"></p>
+    </center>
+
+    <script src="/js/image.js"></script>
+</body>
+
+</html>
