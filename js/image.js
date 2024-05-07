@@ -22,14 +22,13 @@ function compressImage() {
                 var canvas = document.createElement("canvas");
                 var ctx = canvas.getContext("2d");
 
-                var max_width = 500; // Atur lebar maksimum gambar di sini
+                var max_width = 500; 
                 var scale = max_width / img.width;
                 canvas.width = max_width;
                 canvas.height = img.height * scale;
 
                 ctx.drawImage(img, 0, 0, canvas.width, canvas.height);
 
-                // Menyimpan gambar dalam format yang sama seperti aslinya
                 var resizedDataURL = canvas.toDataURL("image/" + imageFile.type.split("/")[1]);
 
                 compressedImage.src = resizedDataURL;

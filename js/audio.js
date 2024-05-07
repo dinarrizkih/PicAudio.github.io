@@ -14,12 +14,9 @@ function compressAudio() {
     reader.onload = function(e) {
         var audioContext = new (window.AudioContext || window.webkitAudioContext)();
         audioContext.decodeAudioData(e.target.result, function(buffer) {
-            // Proses kompresi audio
 
-            // Setelah kompresi selesai
             status.textContent = "Compression Complete!";
             
-            // Tampilkan link unduhan
             var compressedAudio = new File([buffer], 'compressed_' + file.name, { type: file.type });
             var url = URL.createObjectURL(compressedAudio);
             var downloadLink = document.getElementById('downloadLink');
@@ -27,7 +24,6 @@ function compressAudio() {
             downloadLink.download = 'compressed_' + file.name;
             downloadLink.style.display = 'block';
         }, function(error) {
-            // Tangani kesalahan saat decoding audio
             console.error('Error decoding audio: ', error);
             status.textContent = "Error: Unable to decode audio!";
         });
@@ -35,8 +31,6 @@ function compressAudio() {
 
     reader.readAsArrayBuffer(file);
 }
-
-// Set file input value to null when the page is reloaded
 window.onload = function() {
     document.getElementById("fileInput").value = null;
 };

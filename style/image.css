@@ -15,10 +15,10 @@ body {
   
   input[type="file"], input[type="number"] {
     padding: 10px;
-    border: 1px solid #007bff; /* Sesuaikan dengan warna brand */
+    border: 1px solid #007bff;
     border-radius: 5px;
-    margin: 10px auto; /* Tengahkan input file */
-    display: block; /* Supaya input file berada di baris yang terpisah */
+    margin: 10px auto; 
+    display: block; 
   }
   
   button {
@@ -28,8 +28,8 @@ body {
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  margin: 10px auto; /* Tengahkan tombol */
-  display: block; /* Supaya tombol berada di baris yang terpisah */
+  margin: 10px auto;
+  display: block;
   }
   
   #status {
@@ -44,7 +44,7 @@ body {
   }
   
   #resizedImage {
-    width: 500px; /* Menghapus width sehingga gambar mengikuti ukuran maksimum */
+    width: 500px; 
     max-width: 100%; /* Membatasi lebar gambar agar tidak lebih besar dari parent */
     padding: 10px;
     border: 1px solid #ccc;
@@ -57,7 +57,7 @@ body {
     color: #007bff;
     font-weight: bold;
     margin-top: 10px;
-    display: block; /* Supaya link unduhan berada di baris yang terpisah */
+    display: block;
   }
   
   #resizedImageSize {
@@ -74,4 +74,3 @@ body {
   max-width: 100%; 
   max-height: 300px; 
 }
-

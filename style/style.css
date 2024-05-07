@@ -8,13 +8,13 @@ body {
 header {
   background-color: #fff;
   padding: 10px 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Menambahkan shadow untuk header */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 nav {
   display: flex;
   justify-content: space-between;
-  align-items: center; /* Menengahkan brand di header */
+  align-items: center; 
 }
 
 nav a {
@@ -31,11 +31,11 @@ nav a:hover {
   font-weight: bold;
   font-size: 24px;
   color: #333;
-  transition: color 0.3s; /* Animasi perubahan warna */
+  transition: color 0.3s; 
 }
 
 .brand:hover {
-  color: #007bff; /* Warna brand saat dihover */
+  color: #007bff; 
 }
 
 .container {
@@ -44,7 +44,7 @@ nav a:hover {
   justify-content: center;
   align-items: center;
   padding: 20px;
-  margin-top: 20px; /* Mengurangi margin-top agar tampilan lebih kompak */
+  margin-top: 20px;
 }
 
 .box {
@@ -55,29 +55,29 @@ nav a:hover {
   padding: 20px;
   margin: 20px;
   cursor: pointer;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan shadow untuk box */
-  border-radius: 8px; /* Agar box terlihat lebih halus */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px; 
 }
 
 .box i {
-  font-size: 3em; /* Mengubah ukuran ikon agar seimbang */
-  margin-bottom: 10px; /* Menambahkan jarak antara ikon dan teks */
+  font-size: 3em; 
+  margin-bottom: 10px; 
 }
 
 h2 {
-  margin-top: 0; /* Menghapus margin atas agar lebih rapi */
+  margin-top: 0; 
 }
 
 p {
-  margin-bottom: 10px; /* Mengurangi margin bawah agar lebih rapat */
+  margin-bottom: 10px; 
 }
 
 a {
-  color: #333; /* Warna teks */
+  color: #333; 
   text-decoration: none;
 }
 
 a:hover {
   background-color: #f0f0f0; 
-  color: #000000; /* Warna teks saat dihover */
+  color: #000000; 
 }
